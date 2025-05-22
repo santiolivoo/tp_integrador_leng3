@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Libros</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .libro, .carrito-item {
+      margin: 5px 0;
+    }
+    button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tienda de Libros</h1>
+
+  <label for="titulo">Título:</label>
+  <input type="text" id="titulo"><br><br>
+
+  <label for="precio">Precio:</label>
+  <input type="text" id="precio"><br><br>
+
+  <button onclick="agregarLibro()">Agregar Libro</button>
+
+  <h2>Libros Disponibles</h2>
+  <div id="librosDisponibles"></div>
+
+  <h2>Carrito de Compras</h2>
+  <div id="carrito"></div>
+  <p><strong>Total:</strong> $<span id="total">0</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
